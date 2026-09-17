@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Minat dan Bakat</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h1 id="title">Survey Minat dan Bakat</h1>
+    <p id="description">
+      Survey ini bertujuan untuk mengetahui minat dan bakat dari para peserta
+    </p>
+
+    <form id="survey-form">
+
+      <p>Bidang apa yang paling kamu minati?</p>
+
+      <label>
+        <input type="radio" name="minat" value="teknologi" />
+        Teknologi
+      </label>
+
+      <label>
+        <input type="radio" name="minat" value="seni" />
+        Seni
+      </label>
+
+      <label>
+        <input type="radio" name="minat" value="olahraga" />
+        Olahraga
+      </label>
+
+      <label>
+        <input type="radio" name="minat" value="bisnis" />
+        Bisnis
+      </label>
+
+      <label>
+        <input type="radio" name="minat" value="pendidikan" />
+        Pendidikan
+      </label>
+
+
+      <p>Aktivitas apa yang kamu sukai?</p>
+
+      <label>
+        <input type="checkbox" name="aktivitas" value="programming" />
+        Programming
+      </label>
+
+      <label>
+        <input type="checkbox" name="aktivitas" value="gaming" />
+        Gaming
+      </label>
+
+      <label>
+        <input type="checkbox" name="aktivitas" value="membaca" />
+        Membaca
+      </label>
+
+      <label>
+        <input type="checkbox" name="aktivitas" value="olahraga" />
+        Olahraga
+      </label>
+
+      <label>
+        <input type="checkbox" name="aktivitas" value="musik" />
+        Musik
+      </label>
+
+      <label>
+        <input type="checkbox" name="aktivitas" value="desain" />
+        Desain
+      </label>
+
+
+      <p>Berapa banyak waktu yang kamu habiskan untuk hobimu dalam seminggu?</p>
+
+      <select id="dropdown">
+        <option value="kurang-3">Kurang dari 3 jam</option>
+        <option value="3-6">3–6 jam</option>
+        <option value="7-10">7–10 jam</option>
+        <option value="lebih-10">Lebih dari 10 jam</option>
+      </select>
+
+
+      <p>Bidang apa yang ingin kamu pelajari lebih lanjut?</p>
+
+      <select id="bidang">
+        <option value="teknologi">Teknologi</option>
+        <option value="desain">Desain</option>
+        <option value="bisnis">Bisnis</option>
+        <option value="bahasa">Bahasa</option>
+        <option value="olahraga">Olahraga</option>
+      </select>
+
+      <br><br>
+
+      <button id="submit" type="submit">Selanjutnya</button>
+
+    </form>
+  </body>
+</html>
+
