@@ -74,41 +74,17 @@ textarea {
 }
 
 
-#submit {
-    display: block;
-    width: 100%;
-
-    padding: 12px;
-
+.btn-survey {
     background-color: #3498db;
     color: white;
-
-    border: none;
-    border-radius: 5px;
-
-    font-size: 16px;
-
-    text-align: center;
-    text-decoration: none;
-
-    cursor: pointer;
-
-    box-sizing: border-box;
 }
 
-
-#submit:hover {
+.btn-survey:hover {
     background-color: #2980b9;
+    color: white;
 }
 
-#back {
-    display: block;
-
-    text-align: center;
-    text-decoration: none;
-
-    margin-top: 10px;
-    margin-bottom: 10px;
+#btn-link {
 
     color: #3498db;
 }
