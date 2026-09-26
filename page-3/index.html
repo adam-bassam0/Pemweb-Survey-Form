@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Minat dan Bakat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,85 +15,100 @@
     </p>
 
     <form id="survey-form">
+        
+        <div class="mb-3">
+            <label for="kemampuan" class="form-label">
+                Kemampuan yang paling kamu kuasai:
+            </label>
 
-        <label for="kemampuan">
-            Kemampuan yang paling kamu kuasai:
-        </label>
-
-        <select id="kemampuan" name="kemampuan">
-            <option value="">Pilih kemampuan</option>
-            <option value="teknologi">Teknologi</option>
-            <option value="komunikasi">Komunikasi</option>
-            <option value="seni">Seni dan Kreativitas</option>
-            <option value="olahraga">Olahraga</option>
-            <option value="akademik">Akademik</option>
-        </select>
-
-
-        <p>Skill yang kamu miliki:</p>
-
-        <label>
-            <input type="checkbox" name="skill" value="programming">
-            Programming
-        </label>
-
-        <label>
-            <input type="checkbox" name="skill" value="design">
-            Design
-        </label>
-
-        <label>
-            <input type="checkbox" name="skill" value="public-speaking">
-            Public Speaking
-        </label>
-
-        <label>
-            <input type="checkbox" name="skill" value="leadership">
-            Leadership
-        </label>
-
-        <label>
-            <input type="checkbox" name="skill" value="writing">
-            Writing
-        </label>
+            <select id="kemampuan" name="kemampuan" class="form-select">
+                <option value="">Pilih kemampuan</option>
+                <option value="teknologi">Teknologi</option>
+                <option value="komunikasi">Komunikasi</option>
+                <option value="seni">Seni dan Kreativitas</option>
+                <option value="olahraga">Olahraga</option>
+                <option value="akademik">Akademik</option>
+            </select>
+        </div>
 
 
-        <p>Seberapa baik kamu menguasai kemampuan tersebut?</p>
 
-        <label>
-            <input type="radio" name="level" value="pemula">
-            Pemula
-        </label>
+        <div class="mb-3">
+            <p>Skill yang kamu miliki:</p>
 
-        <label>
-            <input type="radio" name="level" value="menengah">
-            Menengah
-        </label>
+            <label>
+                <input type="checkbox" name="skill" value="programming">
+                Programming
+            </label>
 
-        <label>
-            <input type="radio" name="level" value="mahir">
-            Mahir
-        </label>
+            <label>
+                <input type="checkbox" name="skill" value="design">
+                Design
+            </label>
+
+            <label>
+                <input type="checkbox" name="skill" value="public-speaking">
+                Public Speaking
+            </label>
+
+            <label>
+                <input type="checkbox" name="skill" value="leadership">
+             Leadership
+            </label>
+
+            <label>
+                <input type="checkbox" name="skill" value="writing">
+                Writing
+            </label>
+        </div>
+
+        <div class="mb-3">
+
+            <p>Seberapa baik kamu menguasai kemampuan tersebut?</p>
+
+            <label>
+                <input type="radio" name="level" value="pemula">
+                Pemula
+            </label>
+
+            <label>
+                <input type="radio" name="level" value="menengah">
+                Menengah
+            </label>
+
+            <label>
+                <input type="radio" name="level" value="mahir">
+                Mahir
+            </label>
+
+        </div>
+
+        <div class="mb-3">
+            <label for="target">
+                Kemampuan apa yang ingin kamu kembangkan?
+            </label>
 
 
-        <label for="target">
-            Kemampuan apa yang ingin kamu kembangkan?
-        </label>
+            <textarea
+                id="target"
+                name="target"
+                class="form-control"
+                placeholder="Ceritakan kemampuan yang ingin kamu kembangkan..."></textarea>
+        </div>
 
-        <textarea
-            id="target"
-            name="target"
-            placeholder="Ceritakan kemampuan yang ingin kamu kembangkan..."></textarea>
+        <div class="navigation">
+
+            <a href="../page-2/main.html" id="back"
+                class="back-link d-block text-center text-decoration-none my-2">
+                Kembali
+            </a>
+        
 
 
-        <a href="../page-2/main.html" id="back">
-            Kembali
-        </a>
-
-
-        <button type="submit" id="submit">
-            Kirim Survey
-        </button>
+            <button type="submit" id="submit"  class="btn btn-survey w-100">
+                Kirim Survey
+            </button>
+        </div>
 
     </form>
 

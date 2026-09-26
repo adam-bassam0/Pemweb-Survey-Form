@@ -22,6 +22,7 @@ body {
 #survey-form {
     background-color: white;
     max-width: 500px;
+    width: 90%;
 
     /* Membuat form berada di tengah */
     margin: 30px auto;
@@ -67,7 +68,10 @@ input[type="checkbox"] {
     margin-right: 5px;
 }
 
-
+.gender-options {
+    display: flex;
+    gap: 20px;
+}
 
 
 textarea {
@@ -85,4 +89,22 @@ textarea {
     color: white;
 }
 
+@media (max-width: 576px) {
+
+    body {
+        padding: 15px;
+    }
+
+    #survey-form {
+        width: 100%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .gender-options {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+}
 

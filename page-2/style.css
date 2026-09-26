@@ -20,6 +20,7 @@ body {
 
 #survey-form {
     background-color: white;
+    width: 90%;
     max-width: 500px;
 
     /* Membuat form berada di tengah */
@@ -73,6 +74,11 @@ textarea {
     resize: vertical;
 }
 
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 .btn-survey {
     background-color: #3498db;
@@ -84,7 +90,32 @@ textarea {
     color: white;
 }
 
-#btn-link {
-
+.back-link {
     color: #3498db;
+}
+
+.back-link:hover {
+    color: #2980b9;
+}
+
+@media (max-width: 576px) {
+
+    body {
+        padding: 15px;
+    }
+
+    #survey-form {
+        width: 100%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    #title {
+        font-size: 24px;
+    }
+
+    #description {
+        font-size: 14px;
+    }
+
 }

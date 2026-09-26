@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Minat dan Bakat</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -17,90 +18,103 @@
 
       <p>Bidang apa yang paling kamu minati?</p>
 
-      <label>
-        <input type="radio" name="minat" value="teknologi" />
-        Teknologi
-      </label>
+      <div class="mb-3">
 
-      <label>
-        <input type="radio" name="minat" value="seni" />
-        Seni
-      </label>
+        <label>
+          <input type="radio" name="minat" value="teknologi" />
+          Teknologi
+        </label>
 
-      <label>
-        <input type="radio" name="minat" value="olahraga" />
-        Olahraga
-      </label>
+        <label>
+          <input type="radio" name="minat" value="seni" />
+          Seni
+        </label>
 
-      <label>
-        <input type="radio" name="minat" value="bisnis" />
-        Bisnis
-      </label>
+        <label>
+          <input type="radio" name="minat" value="olahraga" />
+          Olahraga
+        </label>
 
-      <label>
-        <input type="radio" name="minat" value="pendidikan" />
-        Pendidikan
-      </label>
+        <label>
+          <input type="radio" name="minat" value="bisnis" />
+          Bisnis
+        </label>
 
+        <label>
+          <input type="radio" name="minat" value="pendidikan" />
+          Pendidikan
+        </label>
+      </div>
 
       <p>Aktivitas apa yang kamu sukai?</p>
 
-      <label>
-        <input type="checkbox" name="aktivitas" value="programming" />
-        Programming
-      </label>
+      <div class="mb-3">
+        <label>
+          <input type="checkbox" name="aktivitas" value="programming" />
+          Programming
+        </label>
 
-      <label>
-        <input type="checkbox" name="aktivitas" value="gaming" />
-        Gaming
-      </label>
+        <label>
+          <input type="checkbox" name="aktivitas" value="gaming" />
+          Gaming
+        </label>
 
-      <label>
-        <input type="checkbox" name="aktivitas" value="membaca" />
-        Membaca
-      </label>
+        <label>
+          <input type="checkbox" name="aktivitas" value="membaca" />
+          Membaca
+        </label>
 
-      <label>
-        <input type="checkbox" name="aktivitas" value="olahraga" />
-        Olahraga
-      </label>
+        <label>
+          <input type="checkbox" name="aktivitas" value="olahraga" />
+          Olahraga
+        </label>
 
-      <label>
-        <input type="checkbox" name="aktivitas" value="musik" />
-        Musik
-      </label>
+        <label>
+          <input type="checkbox" name="aktivitas" value="musik" />
+          Musik
+        </label>
 
-      <label>
-        <input type="checkbox" name="aktivitas" value="desain" />
-        Desain
-      </label>
-
+        <label>
+          <input type="checkbox" name="aktivitas" value="desain" />
+          Desain
+        </label>
+      </div>
 
       <p>Berapa banyak waktu yang kamu habiskan untuk hobimu dalam seminggu?</p>
 
-      <select id="dropdown">
-        <option value="kurang-3">Kurang dari 3 jam</option>
-        <option value="3-6">3–6 jam</option>
-        <option value="7-10">7–10 jam</option>
-        <option value="lebih-10">Lebih dari 10 jam</option>
-      </select>
+      <div class="mb-3">
+        <select id="dropdown" class="form-select">
+          <option value="kurang-3">Kurang dari 3 jam</option>
+          <option value="3-6">3–6 jam</option>
+          <option value="7-10">7–10 jam</option>
+          <option value="lebih-10">Lebih dari 10 jam</option>
+        </select>
+      </div>
 
 
       <p>Bidang apa yang ingin kamu pelajari lebih lanjut?</p>
 
-      <select id="bidang">
-        <option value="teknologi">Teknologi</option>
-        <option value="desain">Desain</option>
-        <option value="bisnis">Bisnis</option>
-        <option value="bahasa">Bahasa</option>
-        <option value="olahraga">Olahraga</option>
-      </select>
+      <div class="mb-3">
+      <select id="bidang" class="form-select">
+          <option value="teknologi">Teknologi</option>
+          <option value="desain">Desain</option>
+          <option value="bisnis">Bisnis</option>
+          <option value="bahasa">Bahasa</option>
+          <option value="olahraga">Olahraga</option>
+        </select>
+      </div>
 
       <br><br>
 
-      <a href="../page-1/index.html" class="back-link d-block text-center text-decoration-none my-2">Kembali</a>
+      <div class="navigation">
+        <a href="../page-1/index.html" class="back-link d-block text-center text-decoration-none my-2">
+          Kembali
+        </a>
 
-      <a href="../page-3/index.html" class="btn btn-survey w-100"> Selanjutnya</a>
+        <a href="../page-3/index.html" class="btn btn-survey w-100">
+          Selanjutnya
+        </a>
+      </div>  
 
     </form>
   </body>
